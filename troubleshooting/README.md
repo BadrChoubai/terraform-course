@@ -46,5 +46,14 @@ To troubleshoot a core or provider error, you can:
 >
 > Setting TF_LOG to JSON outputs logs at the TRACE level or higher, and uses a 
 > parseable JSON encoding as the formatting.
+>
+> ---
+> [Debugging Documentation](https://developer.hashicorp.com/terraform/internals/debugging)
 
-[Debugging Documentation](https://developer.hashicorp.com/terraform/internals/debugging)
+Logging can be enabled separately for `TF_LOG_CORE` and `TF_LOG_PROVIDER` if you'd
+like to selectively enable it. Setting the path for logging output is done using the
+`TF_LOG_PATH` environment variable.
+
+If terraform crashes, a log file is saved with the debug logs from the session
+as well as the panic message and backtrace to a file called: `crash.log`
+
