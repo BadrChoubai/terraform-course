@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 data "aws_vpc" "main" {
-  id = "vpc-010201b98f2c99817"
+  id = "vpc-"
 }
 
 locals {
