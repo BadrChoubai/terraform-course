@@ -25,6 +25,7 @@ The exam has nine objectives of which to focus on:
 
 5. Interact with Terraform modules
     - [Terraform Module Notes](./terraform-modules/README.md)
+    - [Terraform Resource Notes](./terraform-resources/README.md)
 
 6. Use the core Terraform workflow
     - [Terraform Workflow Notes](./terraform-workflow/README.md)
