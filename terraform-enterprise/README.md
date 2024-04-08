@@ -5,8 +5,8 @@ offers a private instance of the service with benefits such as:
 
 - No resource limits
 - Additional Enterprise-Grade architectural features
-    - Audit Logging
-    - SAML single sign-on (SSO)
+  - Audit Logging
+  - SAML single sign-on (SSO)
 
 [Terraform Enterprise Pre-Install Checklist](https://developer.hashicorp.com/terraform/enterprise/replicated/install/pre-install-checklist)
 

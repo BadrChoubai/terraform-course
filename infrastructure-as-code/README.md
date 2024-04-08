@@ -7,7 +7,7 @@ covered by IaC can be both physical (bare-metal) or virtual machines.
 ## Infrastructure as Code Tools
 
 1. [Hashicorp Terraform](https://www.terraform.io/)
-    - There is also an Open-Source fork of Terraform called [OpenTofu](https://github.com/opentofu)
+   - There is also an Open-Source fork of Terraform called [OpenTofu](https://github.com/opentofu)
 2. [Google Cloud Deployment Manager](https://cloud.google.com/deployment-manager/docs/)
 3. [AWS Cloud Formation](https://docs.aws.amazon.com/cloudformation/)
 4. [Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-resource-manager)
@@ -25,39 +25,39 @@ cloud infrastructure.
 ### IaC's role in Infrastructure Lifecycle
 
 - Reliability
-    - IaC makes changes to infrastructure idempotent, consistent, repeatable, and
+  - IaC makes changes to infrastructure idempotent, consistent, repeatable, and
     predictable
-- Manageability 
-    - Enable mutation via code
-    - Revised, with minimal changes
+- Manageability
+  - Enable mutation via code
+  - Revised, with minimal changes
 - Sensibility
-    - Avoid financial and reputational losses
-    - In the case of critical systems (Government/Military) avoid loss of life
+  - Avoid financial and reputational losses
+  - In the case of critical systems (Government/Military) avoid loss of life
     when considering dependencies on infrastructure
 
 ## Non-Idempotent vs. Idempotent Changes to Configuration
-    
+
 As a DevOps engineer when I deploy my IaC configuration file it will provision
 and launch two virtual machines:
 
 - Non-Idempotent Case:
-    - When I update the configuration, the changes are deployed as new resources
+  - When I update the configuration, the changes are deployed as new resources
     and the old ones still exist leaving me to have to manage both sets
 - Idempotent Case:
-    - When I update the configuration, the changes are made to the existing
+  - When I update the configuration, the changes are made to the existing
     infrastructure either by modifying the existing VMs or deleting and creating
     new ones
 
 ## Provisioning vs Deployment vs Orchestration
 
 - Provisioning [Ansible, Chef, Puppet]
-    - To prepare a server with systems, data and software, and make it ready for
+  - To prepare a server with systems, data and software, and make it ready for
     network operation.
     > When you launch a cloud service and configure it you are "provisioning"
 - Deployment [Jenkins, Azure DevOps, CircleCI]
-    - The act of delivering a version of your application to run a provisioned server.
+  - The act of delivering a version of your application to run a provisioned server.
 - Orchestration [Kubernetes, Salt, Fabric]
-    - The act of coordinating multiple systems or services
+  - The act of coordinating multiple systems or services
 
 ## Configuration Drift
 
@@ -66,22 +66,21 @@ time. It often happens when undocumented or unapproved changes are made to softw
 hardward, and operating systems.
 
 Going unnoticed, this can lead to larger issues including:
- - Security vulnerabilities
- - Compliance violations
- - Downtime of essential services
- - Data loss
- - Unpredictable behavior in deployment
 
- Luckily, you can detect configuration drift using a compliance tool (i.e. AWS Config,
- Azure Policies). Some providers may also have a feature you can enable which can alert
- you to possible configuration drift that may have happened. A big feature inside
- terraform is its ability to manage and track state. If you've detected configuration 
- drift, correcting it may be possible using many of the same tools.
+- Security vulnerabilities
+- Compliance violations
+- Downtime of essential services
+- Data loss
+- Unpredictable behavior in deployment
 
- Some steps you can take to prevent the problem:
-     - Immutable infrastructure: always create and destroy, never reuse.
-     - Using methodologies like GitOps to version control IaC and peer review
-     changes with Pull Requests.
+Luckily, you can detect configuration drift using a compliance tool (i.e. AWS Config,
+Azure Policies). Some providers may also have a feature you can enable which can alert
+you to possible configuration drift that may have happened. A big feature inside
+terraform is its ability to manage and track state. If you've detected configuration
+drift, correcting it may be possible using many of the same tools.
+
+Some steps you can take to prevent the problem: - Immutable infrastructure: always create and destroy, never reuse. - Using methodologies like GitOps to version control IaC and peer review
+changes with Pull Requests.
 
 ## GitOps
 

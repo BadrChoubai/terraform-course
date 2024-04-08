@@ -1,15 +1,15 @@
 # Terraform Backends
 
 A Terraform configuration can specify a backend, which is where state data files
-can be stored. 
+can be stored.
 
 ## Configuration
 
-To configure a backend, add a nested backend block within the top-level terraform 
+To configure a backend, add a nested backend block within the top-level terraform
 block. A standard backend will only be used to store the configuration state, but an
 enhanced backed will also be able to perform operations over your configuration.
 
-If a configuration includes no backend block, Terraform defaults to using the local 
+If a configuration includes no backend block, Terraform defaults to using the local
 backend, which stores state as a plain file in the current working directory.
 
 ```terraform
@@ -22,7 +22,7 @@ terraform {
     region         = "us-east-1"
   }
 
-  # If using Terraform Cloud a `cloud` block is created 
+  # If using Terraform Cloud a `cloud` block is created
   cloud {
     hostname     = "app.terraform.io"
     organization = "company"
@@ -109,7 +109,7 @@ malicious actors.
 When using a local backend, state is store in plan-text JSON (`.json`) files:
 
 - DO NOT share this file to anybody
-- DO NOT commit this file to your `git` repository 
+- DO NOT commit this file to your `git` repository
 
 ### Remote State (Terraform Cloud)
 
@@ -127,7 +127,7 @@ You can store state with Third-Party backends (i.e. S3), but you should vet your
 choices' capabilities and determine if it will meet your standards for security
 and compliance.
 
-Given the example of using S3, you would need to ensure that encryption and 
+Given the example of using S3, you would need to ensure that encryption and
 versioning are turned on and create a custom trail for data events.
 
 #### Terraform Ignore File
@@ -154,8 +154,8 @@ crash.log
 crash.*.log
 
 # Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
+# password, private keys, and other secrets. These should not be part of version
+# control as they are data points which are potentially sensitive and subject
 # to change depending on the environment.
 *.tfvars
 *.tfvars.json
@@ -177,4 +177,3 @@ override.tf.json
 .terraformrc
 terraform.rc
 ```
-

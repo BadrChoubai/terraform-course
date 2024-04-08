@@ -7,42 +7,46 @@ Associate Certification.
 The exam has nine objectives of which to focus on:
 
 1. Understand infrastructure as code (IaC) concepts
-    - [Infrastructure-as-Code Notes](./infrastructure-as-code/README.md)
-    - [Team Workflow Notes](./team-workflow/README.md)
+
+   - [Infrastructure-as-Code Notes](./infrastructure-as-code/README.md)
+   - [Team Workflow Notes](./team-workflow/README.md)
 
 2. Understand the purpose of Terraform (vs other IaC)
-    - [Configuration Drift Notes](./configuration-drift/README.md)
-    - [Terraform Concepts Notes](./terraform-concepts/README.md)
+
+   - [Configuration Drift Notes](./configuration-drift/README.md)
+   - [Terraform Concepts Notes](./terraform-concepts/README.md)
 
 3. Understand Terraform basics
-    - [Terraform Basics Notes](./terraform-basics/README.md)
-    - [Terraform Expressions Notes](./expressions/README.md)
-    - [Terraform Language Notes](./terraform-language/README.md)
-    - [Troubleshooting Notes](./troubleshooting/README.md)
+
+   - [Terraform Basics Notes](./terraform-basics/README.md)
+   - [Terraform Expressions Notes](./expressions/README.md)
+   - [Terraform Language Notes](./terraform-language/README.md)
+   - [Troubleshooting Notes](./troubleshooting/README.md)
 
 4. Use Terraform outside of core workflow
-    - [Team Workflow Notes](./team-workflow/README.md)
+
+   - [Team Workflow Notes](./team-workflow/README.md)
 
 5. Interact with Terraform modules
-    - [Terraform Module Notes](./terraform-modules/README.md)
-    - [Terraform Resource Notes](./terraform-resources/README.md)
+
+   - [Terraform Module Notes](./terraform-modules/README.md)
+   - [Terraform Resource Notes](./terraform-resources/README.md)
 
 6. Use the core Terraform workflow
-    - [Terraform Workflow Notes](./terraform-workflow/README.md)
-    - [Resources Notes](./resources/README.md)
+
+   - [Terraform Workflow Notes](./terraform-workflow/README.md)
+   - [Resources Notes](./resources/README.md)
 
 7. Implement and maintain state
-    - [Terraform Backends Notes](./terraform-backends/README.md)
-    - [Terraform State Notes](./terraform-state/README.md)
+
+   - [Terraform Backends Notes](./terraform-backends/README.md)
+   - [Terraform State Notes](./terraform-state/README.md)
 
 8. Read, generate, and modify configuration
 
 9. Understand Terraform Cloud capabilites
-    - [Terraform Cloud Notes](./terraform-cloud/README.md)
-    - [Terraform Enterprise Notes](./terraform-enterprise/README.md)
+   - [Terraform Cloud Notes](./terraform-cloud/README.md)
+   - [Terraform Enterprise Notes](./terraform-enterprise/README.md)
 
 > The [Full List](https://www.hashicorp.com/certification/terraform-associate) of
 > objectives is available on the Certification website.
-
-
-

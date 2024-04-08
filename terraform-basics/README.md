@@ -9,13 +9,13 @@ Terraform Best Practices: <https://www.terraform-best-practices.com/>
 
 1. Write or Update your Terraform Configuration file
 2. use `terraform init` to initialize your project and pull latest providers and
-modules
+   modules
 3. use `terraform plan` to generate output of planned changes which you may optionally
-save
+   save
 4. use `terraform validate` to ensure that types and values are presents and that
-required attributes are present
-5. use `terraform apply` to execcute and provision the infrastructure from the plan 
-created in the previous command
+   required attributes are present
+5. use `terraform apply` to execcute and provision the infrastructure from the plan
+   created in the previous command
 6. use `terraform destroy` to destroy remote infrastructure
 
 ### Commands
@@ -45,12 +45,13 @@ Terraform uses Change Automation in the form of Execution Plans and Resources Gr
 to apply and review complex ChangeSets
 
 - What is Change Management?
-    - A standard approach to apply change and resolve conflicts brough about by change
-    - In the context of Infrastructure as Code, change management is the procedure that
+
+  - A standard approach to apply change and resolve conflicts brough about by change
+  - In the context of Infrastructure as Code, change management is the procedure that
     will be followed when resources are modified and applied by configuration script
 
 - What is Change Automation?
-    - A way of _automatically_ creating a consistent, systematic, and predictable 
+  - A way of _automatically_ creating a consistent, systematic, and predictable
     way of managing change requests via organizational controls and policies
 
 ### Execution Plans

@@ -3,8 +3,8 @@
 State is used by Terraform to inform on the condition of cloud resources at a given
 time.
 
-Terraform preserves state via a state file (JSON) it creates called 
-`terraform.tfstate`. It is a one-to-one mapping of `resource instances` to 
+Terraform preserves state via a state file (JSON) it creates called
+`terraform.tfstate`. It is a one-to-one mapping of `resource instances` to
 `remote objects`.
 
 ## Terraform State Backups
@@ -15,9 +15,9 @@ is created as `terraform.tfstate.backup`.
 ## Terraform State Commands
 
 - `terraform state mv`
-    - Rename existing resources: `... mv packet_device.worker packet_device.helper` 
-    - Move a resource into a module: `... mv package_device.worker module.workers.packet_device.worker`
-    - Move a module into a module: `... mv module.app module.parent.module.app
+  - Rename existing resources: `... mv packet_device.worker packet_device.helper`
+  - Move a resource into a module: `... mv package_device.worker module.workers.packet_device.worker`
+  - Move a module into a module: `... mv module.app module.parent.module.app
 
 ### Commands
 

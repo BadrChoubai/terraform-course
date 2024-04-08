@@ -13,16 +13,15 @@ To trouble shoot a language error, you can run one of several commands:
 - `terraform validate`
 - `terraform version`
 
-
 ## 2. State Errors
 
-> The state of your remote resources  has changed from the expected state in your
+> The state of your remote resources has changed from the expected state in your
 > configuration file
 
 To troubleshoot a language error, you can run one of several commands:
 
-- `terraform refresh` - Deprecated: `>=v1.5.0` 
-- `terraform apply` 
+- `terraform refresh` - Deprecated: `>=v1.5.0`
+- `terraform apply`
 - `terraform apply -replace`
 
 ## 3. Core and Providers Errors
@@ -38,16 +37,17 @@ To troubleshoot a core or provider error, you can:
 
 ## Debugging in Terraform
 
-> Terraform has detailed logs that you can enable by setting the TF_LOG environment 
+> Terraform has detailed logs that you can enable by setting the TF_LOG environment
 > variable to any value. Enabling this setting causes detailed logs to appear on stderr.
 >
-> You can set TF_LOG to one of the log levels (in order of decreasing verbosity) 
+> You can set TF_LOG to one of the log levels (in order of decreasing verbosity)
 > TRACE, DEBUG, INFO, WARN or ERROR to change the verbosity of the logs.
 >
-> Setting TF_LOG to JSON outputs logs at the TRACE level or higher, and uses a 
+> Setting TF_LOG to JSON outputs logs at the TRACE level or higher, and uses a
 > parseable JSON encoding as the formatting.
 >
 > ---
+>
 > [Debugging Documentation](https://developer.hashicorp.com/terraform/internals/debugging)
 
 Logging can be enabled separately for `TF_LOG_CORE` and `TF_LOG_PROVIDER` if you'd
@@ -56,4 +56,3 @@ like to selectively enable it. Setting the path for logging output is done using
 
 If terraform crashes, a log file is saved with the debug logs from the session
 as well as the panic message and backtrace to a file called: `crash.log`
-

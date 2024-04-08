@@ -77,7 +77,7 @@ resource "aws_instance" "web" {
       "/usr/local/bin/bootstrap"
     ]
   }
-  
+
   ami           = ""
   instance_type = ""
 }
@@ -102,7 +102,7 @@ resource "aws_instance" "web" {
     password = "${var.root_password}"
     host     = "${var.host}"
   }
-  
+
   ami           = ""
   instance_type = ""
 }
@@ -110,7 +110,7 @@ resource "aws_instance" "web" {
 
 ## Terraform Providers
 
-Providers are Terraform Plugins that allow you to interact with: 
+Providers are Terraform Plugins that allow you to interact with:
 
 - Cloud Service Providers
 - Software as a Service Providers
@@ -134,10 +134,9 @@ terraform {
 > ### Terraform Cloud - Private Registry
 >
 > Terraform Cloud allows you to publish private modules for your organizations within
-> the Terraform Cloud Private Registry.  
+> the Terraform Cloud Private Registry.
 
 #### Viewing Providers in the Command-Line
-
 
 ```bash
 Usage: terraform [global options] providers [options] [DIR]
@@ -148,7 +147,7 @@ Usage: terraform [global options] providers [options] [DIR]
   This provides an overview of all of the provider requirements across all
   referenced modules, as an aid to understanding why particular provider
   plugins are needed and why particular versions are selected.
-  
+
 Subcommands:
     lock      Write out dependency locks for the configured providers
     mirror    Save local copies of all required provider plugins
@@ -220,4 +219,3 @@ module "vpc" {
 The below diagram highlight the separation of concerns by configuration vs another tool Ansible.
 
 ![Terraform Responsibilities](../docs/assets/Terraform-Ansible-Responsibilities.png "Terraform Responsibilities")
-

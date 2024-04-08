@@ -14,7 +14,7 @@ again to apply the updates. It does the following:
     - Create a `.terraform` directory
     - Create a dependency lock file to enforce expected versions for plugins and
     terraform itself
-    - If supported by your backend, locks your state to prevent writes for all 
+    - If supported by your backend, locks your state to prevent writes for all
     operations that could write state
 
 Running `terraform init` with the `-upgrade` flag will upgrade all plugins to the
@@ -26,17 +26,17 @@ Running `terraform init` with the `-plugin-dir=PATH` flag will install plugins o
 from the given directory PATH
 
 Running `terraform init` with the `-lockfile=MODE` flag lets you set the mode on
-the dependency lockfile 
+the dependency lockfile
 
 ### `terraform get`
 
 The `terraform get` command may be used if you are developing your own terraform module,
-in this case, you may not need to initialize state or pull new provider binaries. 
+in this case, you may not need to initialize state or pull new provider binaries.
 
 ## Writing and Modifying Terraform Code
 
 Terraform has a set of "utility" commands which you can use when developing your
-terraform project. 
+terraform project.
 
 ### `terraform fmt`
 
@@ -61,9 +61,8 @@ terraform fmt --diff
 ### `terraform validate`
 
 This command may be run to validate the syntax and arguments of the configuration files
-in your Terraform project. Running `terraform plan` or `terraform apply` includes a 
+in your Terraform project. Running `terraform plan` or `terraform apply` includes a
 step that runs `terraform validate`.
-
 
 ### `terraform console`
 
@@ -86,12 +85,12 @@ to create resources, which consists of:
 There are two types of plans which Terraform will work with:
 
 - Speculative Plan
-    - Created with `terraform apply`
-    - Terraform outputs the description of the plan without any intention of
+  - Created with `terraform apply`
+  - Terraform outputs the description of the plan without any intention of
     running it
 - Saved Plan
-    - Create with `terraform apply -out=FILE`
-    - This will generate a plan file which can then be passed to `terraform apply [FILE]`.
+  - Create with `terraform apply -out=FILE`
+  - This will generate a plan file which can then be passed to `terraform apply [FILE]`.
     When using a saved plan, it will not prompt you to confirm and will act like auto-approve
 
 ## Terraform Apply `terraform apply`
@@ -100,13 +99,13 @@ Running `terraform apply` is done to execution the actions proposed in an Execut
 it runs in two modes.
 
 - Automatic Plan Mode
-    - Run `terraform apply`
-    - Executes plan, validate, and the apply
-    - Requires users to manually approve the plan by writing "yes", unless `-auto-approve`
+  - Run `terraform apply`
+  - Executes plan, validate, and the apply
+  - Requires users to manually approve the plan by writing "yes", unless `-auto-approve`
     flag is passed
 - Saved Plan Mode
-    - Running `terraform apply FILE`
-    - Performs exactly the steps specified by the plan file and does not prompt
+  - Running `terraform apply FILE`
+  - Performs exactly the steps specified by the plan file and does not prompt
     for approval. If you'd like to preview changes you can run `terraform show`
 
 ### Commands

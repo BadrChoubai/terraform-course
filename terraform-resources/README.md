@@ -29,9 +29,9 @@ keyword versions.
 Complex types are broken up into two categories:
 
 - Collection Types
-    - `list`, `map`, and `set`
+  - `list`, `map`, and `set`
 - Structural Types
-    - `tuple` and `object`
+  - `tuple` and `object`
 
 ### Collection Types
 
@@ -59,7 +59,7 @@ variable "with_optional_attribute" {
     a = string         # a required attribute
     b = optional(bool) # an optional attribute
   })
-  
+
   default = {
     a = "us-east-1"
     b = false
