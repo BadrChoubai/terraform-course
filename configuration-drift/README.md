@@ -9,8 +9,9 @@ state. Using Terraform, we can resolve the issue in three ways:
 2. Importing Resources
     - When an approved manual addition of a resource needs to be performed we can
     use the `import` command
-3. When an approved manual configuration of a resource has changed or removed we can
-use the `-refresh-only` flag to reflect those changes in our state file
+3. Refresh State 
+    - When an approved manual configuration of a resource has changed or removed we can
+    use the `-refresh-only` flag to reflect those changes in our state file
 
 ## Replacing Resources
 
