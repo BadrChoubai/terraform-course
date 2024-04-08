@@ -28,6 +28,8 @@ The exam has nine objectives of which to focus on:
     - [Terraform Workflow Notes](./terraform-workflow/README.md)
 
 7. Implement and maintain state
+    - [Terraform Backends Notes](./terraform-backends/README.md)
+    - [Terraform State Notes](./terraform-state/README.md)
 
 8. Read, generate, and modify configuration
 
