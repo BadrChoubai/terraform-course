@@ -14,10 +14,10 @@ The exam has nine objectives of which to focus on:
     - [Terraform Concepts Notes](./terraform-concepts/README.md)
 
 3. Understand Terraform basics
+    - [Configuration Drift Notes](./configuration-drift/README.md)
     - [Terraform Basics Notes](./terraform-basics/README.md)
-    - [Terraform Configuration Drift Notes](./configuration-drift/README.md)
     - [Terraform Language Notes](./terraform-language/README.md)
-    - [Terraform Troubleshooting Notes](./troubleshooting/README.md)
+    - [Troubleshooting Notes](./troubleshooting/README.md)
 
 4. Use Terraform outside of core workflow
     - [Team Workflow Notes](./team-workflow/README.md)
