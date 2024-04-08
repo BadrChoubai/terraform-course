@@ -92,6 +92,6 @@ smaller practices.
 2. MRs - Merge Requests are used as the change mechanism for which infrastructure updates will occur
 3. CI/CD - Continuous Integration and Delivery is used to automate the deployment of infrastructure
 
-![GitOps Diagram](../.attachments/GitOps-diagram.png "GitOps Diagram")
+![GitOps Diagram](../docs/assets/GitOps-diagram.png "GitOps Diagram")
 
 > [GitLab Article](https://about.gitlab.com/topics/gitops/)
