@@ -39,6 +39,7 @@ The exam has nine objectives of which to focus on:
 
 9. Understand Terraform Cloud capabilites
     - [Terraform Cloud Notes](./terraform-cloud/README.md)
+    - [Terraform Enterprise Notes](./terraform-enterprise/README.md)
 
 > The [Full List](https://www.hashicorp.com/certification/terraform-associate) of
 > objectives is available on the Certification website.
