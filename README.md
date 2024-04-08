@@ -28,6 +28,7 @@ The exam has nine objectives of which to focus on:
 
 6. Use the core Terraform workflow
     - [Terraform Workflow Notes](./terraform-workflow/README.md)
+    - [Resources Notes](./resources/README.md)
 
 7. Implement and maintain state
     - [Terraform Backends Notes](./terraform-backends/README.md)
