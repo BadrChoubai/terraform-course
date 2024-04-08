@@ -50,7 +50,7 @@ For expressions allow you to iterate over a complex type and apply transformatio
 as input a list, set, tuple, map, or object may be used.
 
 - Lists `[] returns a tuple value`
-    - `[for n in var.list : tostring(n)]`       =>  ["1", "2", ... ]
+    - `[for n in var.list : tostring(n)]`       =>  `["1", "2", ... ]`
     - `[for i, v in var.list : "${i} is ${v}"]
 - Maps and Objects `{} returns an object value`
     - `for k, v in var.map : join("-", [k, v])` => `{ k = "k-v", ... }`
@@ -121,7 +121,7 @@ A version constraint is a string containing one or more conditions, separated by
 - `=1.0.0` - Match exact version number
 - `!=1.0.0` - Exclude exact version number
 - `< |<= | > | >= 1.0.0` - Compare against a specific version
-- `~>` - Allow only the PATCH version to increment 
+- `~>1.0.21` - Allow only the rightmost number to increment 
 
 ### Progressive Versioning
 
