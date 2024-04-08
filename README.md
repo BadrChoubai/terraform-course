@@ -11,10 +11,10 @@ The exam has nine objectives of which to focus on:
     - [Team Workflow Notes](./team-workflow/README.md)
 
 2. Understand the purpose of Terraform (vs other IaC)
+    - [Configuration Drift Notes](./configuration-drift/README.md)
     - [Terraform Concepts Notes](./terraform-concepts/README.md)
 
 3. Understand Terraform basics
-    - [Configuration Drift Notes](./configuration-drift/README.md)
     - [Terraform Basics Notes](./terraform-basics/README.md)
     - [Terraform Expressions Notes](./expressions/README.md)
     - [Terraform Language Notes](./terraform-language/README.md)
