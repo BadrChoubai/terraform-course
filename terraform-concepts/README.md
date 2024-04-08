@@ -219,5 +219,5 @@ module "vpc" {
 
 The below diagram highlight the separation of concerns by configuration vs another tool Ansible.
 
-![Terraform Responsibilities](../.attachments/Terraform-Ansible-Responsibilities.png "Terraform Responsibilities")
+![Terraform Responsibilities](../docs/assets/Terraform-Ansible-Responsibilities.png "Terraform Responsibilities")
 

@@ -7,16 +7,25 @@ Associate Certification.
 The exam has nine objectives of which to focus on:
 
 1. Understand infrastructure as code (IaC) concepts
+    - [Infrastructure-as-Code Notes](./infrastructure-as-code/README.md)
+    - [Team Workflow Notes](./team-workflow/README.md)
 
-2. Understand the purpose of Terrform (vs other IaC)
+2. Understand the purpose of Terraform (vs other IaC)
+    - [Terraform Concepts Notes](./terraform-concepts/README.md)
 
 3. Understand Terraform basics
+    - [Terraform Basics Notes](./terraform-basics/README.md)
+    - [Terraform Language Notes](./terraform-language/README.md)
+    - [Terraform Troubleshooting Notes](./troubleshooting/README.md)
 
 4. Use Terraform outside of core workflow
+    - [Team Workflow Notes](./team-workflow/README.md)
 
 5. Interact with Terraform modules
+    - [Terraform Module Notes](./terraform-modules/README.md)
 
 6. Use the core Terraform workflow
+    - [Terraform Workflow Notes](./terraform-workflow/README.md)
 
 7. Implement and maintain state
 
