@@ -4,14 +4,14 @@ Configuration drift is when your expected resources are different from your expe
 state. Using Terraform, we can resolve the issue in three ways:
 
 1. Replacing Resources
-   - When a resource has become damaged or degraded in a way that cannot be detected
-     by Terraform we can use the `-replace` flag
+    - When a resource has become damaged or degraded in a way that cannot be detected
+      by Terraform we can use the `-replace` flag
 2. Importing Resources
-   - When an approved manual addition of a resource needs to be performed we can
-     use the `import` command
+    - When an approved manual addition of a resource needs to be performed we can
+      use the `import` command
 3. Refresh State
-   - When an approved manual configuration of a resource has changed or removed we can
-     use the `-refresh-only` flag to reflect those changes in our state file
+    - When an approved manual configuration of a resource has changed or removed we can
+      use the `-refresh-only` flag to reflect those changes in our state file
 
 ## Replacing Resources
 
@@ -67,11 +67,11 @@ which allow you to import resources inside of the configuration itself.
 >
 > The import block has the following arguments:
 >
-> - `to` - The instance address this resource will have in your state file.
-> - `id` - A string with the import ID of the resource, or an expression that
->   evaluates to a string.
-> - `provider` (optional) - An optional custom resource provider, see The
->   Resource provider Meta-Argument for details.
+> -   `to` - The instance address this resource will have in your state file.
+> -   `id` - A string with the import ID of the resource, or an expression that
+>     evaluates to a string.
+> -   `provider` (optional) - An optional custom resource provider, see The
+>     Resource provider Meta-Argument for details.
 
 [Import Block Documentation](https://developer.hashicorp.com/terraform/language/import)
 
@@ -91,16 +91,16 @@ below scenario highlights its utility.
 
 #### Running `terraform apply`
 
-- Terraform will notice that the VM is missing
-- Terraform will propose to create a new VM
-- The changes to the infrastructure match the state file
-- The infrastructure will be created and match the state file
+-   Terraform will notice that the VM is missing
+-   Terraform will propose to create a new VM
+-   The changes to the infrastructure match the state file
+-   The infrastructure will be created and match the state file
 
 #### Running `terraform apply -refresh-only`
 
-- Terraform will notice that the VM you provisioned is missing
-- But by using the `refresh-only` flag, it knows that the missing VM is intentional
-- Terraform will propose to delete the VM from the state file
+-   Terraform will notice that the VM you provisioned is missing
+-   But by using the `refresh-only` flag, it knows that the missing VM is intentional
+-   Terraform will propose to delete the VM from the state file
 
 ## Resource Addressing
 
@@ -109,13 +109,13 @@ in your configuration.
 
 ### Addressing Structure
 
-- Module Path - addresses a module within the tree of modules
+-   Module Path - addresses a module within the tree of modules
 
-  - `module.module_name[module_index]`
-    - `module` namespace of a module
-    - `module_name` user-defined name of a module
+    -   `module.module_name[module_index]`
+        -   `module` namespace of a module
+        -   `module_name` user-defined name of a module
 
-- Resource Spec - adresses a specific resource instance in the selected module
-  - `resource_type.resource_name[instance_index]`
-    - `resource_type` type of the resource being addressed
-    - `resource_name` user-defined name of the resource
+-   Resource Spec - adresses a specific resource instance in the selected module
+    -   `resource_type.resource_name[instance_index]`
+        -   `resource_type` type of the resource being addressed
+        -   `resource_name` user-defined name of the resource

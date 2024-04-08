@@ -108,18 +108,18 @@ malicious actors.
 
 When using a local backend, state is store in plan-text JSON (`.json`) files:
 
-- DO NOT share this file to anybody
-- DO NOT commit this file to your `git` repository
+-   DO NOT share this file to anybody
+-   DO NOT commit this file to your `git` repository
 
 ### Remote State (Terraform Cloud)
 
 A benefit to using Terraform Cloud is it has built-in guarantees for securing
 information about the statefile
 
-- The statefile is held on in-memory and is not persisted to disk.
-- The statefile is encrypted at-rest and in-transit
-- With Terraform Enterprise you have detailed audit logging for tamper
-  evidence
+-   The statefile is held on in-memory and is not persisted to disk.
+-   The statefile is encrypted at-rest and in-transit
+-   With Terraform Enterprise you have detailed audit logging for tamper
+    evidence
 
 ### Remote State with Third-Party Backends
 

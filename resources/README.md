@@ -71,27 +71,27 @@ When you execute your resource plan using `terraform apply`, it will
 perform one of the following to a resource:
 
 1. Create (`+ create`)
-   - Resources that exist in the configuration but are not associated with a real
-     infrastructure object in the state
+    - Resources that exist in the configuration but are not associated with a real
+      infrastructure object in the state
 2. Destroy (`- destroy`)
-   - Resources that exist in the state but no longer exist in the configuration
+    - Resources that exist in the state but no longer exist in the configuration
 3. Update in-place (`~ update in-place`)
-   - Resources whose arguments have changed
+    - Resources whose arguments have changed
 4. Destroy and re-create (`-/+ destroy and the create replacement`)
-   - Resources whose arguments have changed but which cannot be update in-place
-     due to remote API limitations
+    - Resources whose arguments have changed but which cannot be update in-place
+      due to remote API limitations
 
 ### Lifecycle Blocks
 
 Lifecycle block allows you to change what happens to a resource
 
-- `create_before_destroy(bool)`
-  - when replacing a resource, first create the new resource before deleting it
-- `prevent_destroy(bool)`
-  - Ensures a resource is not destroyed
-- `ignore_changes(list)`
-  - Don't change the resource (create, update, destroy) the resource
-    if a change occurs for the listed attributes
+-   `create_before_destroy(bool)`
+    -   when replacing a resource, first create the new resource before deleting it
+-   `prevent_destroy(bool)`
+    -   Ensures a resource is not destroyed
+-   `ignore_changes(list)`
+    -   Don't change the resource (create, update, destroy) the resource
+        if a change occurs for the listed attributes
 
 ```terraform
 resource "azurerm_resource_group" "example" {

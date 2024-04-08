@@ -112,9 +112,9 @@ resource "aws_instance" "web" {
 
 Providers are Terraform Plugins that allow you to interact with:
 
-- Cloud Service Providers
-- Software as a Service Providers
-- Other APIs (i.e. Kubernetes)
+-   Cloud Service Providers
+-   Software as a Service Providers
+-   Other APIs (i.e. Kubernetes)
 
 [Terraform Registry](https://registry.terraform.io/)
 

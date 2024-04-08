@@ -3,10 +3,10 @@
 Terraform Enterprise is the self-hosted distribution of Terraform Cloud. It
 offers a private instance of the service with benefits such as:
 
-- No resource limits
-- Additional Enterprise-Grade architectural features
-  - Audit Logging
-  - SAML single sign-on (SSO)
+-   No resource limits
+-   Additional Enterprise-Grade architectural features
+    -   Audit Logging
+    -   SAML single sign-on (SSO)
 
 [Terraform Enterprise Pre-Install Checklist](https://developer.hashicorp.com/terraform/enterprise/replicated/install/pre-install-checklist)
 

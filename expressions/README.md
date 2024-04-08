@@ -20,20 +20,20 @@ Expressions are used to `refer to` or `compute values` within a configuration:
 
 ## Strings and Templates
 
-- strings are creating using double quotes `"string"`
-- For multi-line strings you would use "heredoc" syntax
+-   strings are creating using double quotes `"string"`
+-   For multi-line strings you would use "heredoc" syntax
 
-  ```text
-  <<EOT
-  hello
-  world
-  EOT
-  ```
+    ```text
+    <<EOT
+    hello
+    world
+    EOT
+    ```
 
-- string interpolation syntax
-  - `Region: ${local.region}`
-- directives can be used for evaluating logic inside of templated strings and
-  multi-line strings - `%{if <BOOL>}`/`%{else}`/`%{endif}` - `%{for <NAME> in <COLLECTION>}` / `%{endfor}`
+-   string interpolation syntax
+    -   `Region: ${local.region}`
+-   directives can be used for evaluating logic inside of templated strings and
+    multi-line strings - `%{if <BOOL>}`/`%{else}`/`%{endif}` - `%{for <NAME> in <COLLECTION>}` / `%{endfor}`
 
 ## Expressions
 
@@ -47,11 +47,11 @@ Terraform supports the use of ternary if else conditions:
 For expressions allow you to iterate over a complex type and apply transformations
 as input a list, set, tuple, map, or object may be used.
 
-- Lists `[] returns a tuple value`
-  - `[for n in var.list : tostring(n)]` => `["1", "2", ... ]`
-  - `[for i, v in var.list : "${i} is ${v}"]
-- Maps and Objects `{} returns an object value`
-  - `for k, v in var.map : join("-", [k, v])` => `{ k = "k-v", ... }`
+-   Lists `[] returns a tuple value`
+    -   `[for n in var.list : tostring(n)]` => `["1", "2", ... ]`
+    -   `[for i, v in var.list : "${i} is ${v}"]
+-   Maps and Objects `{} returns an object value`
+    -   `for k, v in var.map : join("-", [k, v])` => `{ k = "k-v", ... }`
 
 ### Splat Expressions
 
@@ -62,9 +62,9 @@ into: `var.list[*].id`
 
 The have a special behavior when applied to lists:
 
-- if the value is anything other than a null value, then the splat expression willl
-  transform it into a single-element list
-- if the value is null then the splat express will return an empty tuple
+-   if the value is anything other than a null value, then the splat expression willl
+    transform it into a single-element list
+-   if the value is null then the splat express will return an empty tuple
 
 The behavior is useful for modules that accept optional input variables whose
 default value is null to represent the absence of any value.
@@ -116,10 +116,10 @@ versions.
 
 A version constraint is a string containing one or more conditions, separated by commas
 
-- `=1.0.0` - Match exact version number
-- `!=1.0.0` - Exclude exact version number
-- `< |<= | > | >= 1.0.0` - Compare against a specific version
-- `~>1.0.21` - Allow only the rightmost number to increment
+-   `=1.0.0` - Match exact version number
+-   `!=1.0.0` - Exclude exact version number
+-   `< |<= | > | >= 1.0.0` - Compare against a specific version
+-   `~>1.0.21` - Allow only the rightmost number to increment
 
 ### Progressive Versioning
 

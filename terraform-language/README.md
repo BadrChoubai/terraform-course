@@ -19,14 +19,14 @@ libraries can be used to prepare the generated file.
 
 ```json
 {
-  "resource": {
-    "aws_instance": {
-      "example": {
-        "instance_type": "t2.micro",
-        "ami": "ami-abc123"
-      }
+    "resource": {
+        "aws_instance": {
+            "example": {
+                "instance_type": "t2.micro",
+                "ami": "ami-abc123"
+            }
+        }
     }
-  }
 }
 ```
 
@@ -83,13 +83,13 @@ Terraform will look for variables defined in your environment that start with
 
 ## Loading Variables
 
-- Default auto-loaded files: `terraform.tfvars[.json]`, automatically loaded by
-  running `terraform apply`
-- Other variable files: `development.tfvars`, not automatically loaded and must be
-  specified in running the command (with `-var-file`). Naming the file with:
-  `development.auto.tfvars` tells terraform to load the file automatically
-- If you only need to overwrite a single variable you can use the `-var` flag on it
-  and providing the new value
+-   Default auto-loaded files: `terraform.tfvars[.json]`, automatically loaded by
+    running `terraform apply`
+-   Other variable files: `development.tfvars`, not automatically loaded and must be
+    specified in running the command (with `-var-file`). Naming the file with:
+    `development.auto.tfvars` tells terraform to load the file automatically
+-   If you only need to overwrite a single variable you can use the `-var` flag on it
+    and providing the new value
 
 ### Load Precedence
 
@@ -104,9 +104,9 @@ Terraform will look for variables defined in your environment that start with
 Output values are computed values which may be viewed after a `terraform apply`
 is performed, allowing you to:
 
-- Obtain information after resource provisioning is done (i.e. public IP address)
-- Output a file of values for programattic integration
-- Cross-reference stacks view outputs in a state file via `terraform_remote_state`
+-   Obtain information after resource provisioning is done (i.e. public IP address)
+-   Output a file of values for programattic integration
+-   Cross-reference stacks view outputs in a state file via `terraform_remote_state`
 
 ```terraform
 output "repository_url" {
@@ -187,40 +187,40 @@ resource "aws_iam_role" "ecs_task_execution_role" {
 
 ## Values
 
-- Named values in Terraform are built-in expressions used to reference
-  various values:
+-   Named values in Terraform are built-in expressions used to reference
+    various values:
 
-      ```text
-      Resources:              `<RESOURCE_TYPE>.<NAME>`
-      Input Variables:        `var.<NAME>`
-      Local Values:           `local.<NAME>`
-      Child Module Outputs:   `module.<NAME>`
-      Data Sources:           `data.<DATA_TYPE>.<NAME>`
-      ```
+        ```text
+        Resources:              `<RESOURCE_TYPE>.<NAME>`
+        Input Variables:        `var.<NAME>`
+        Local Values:           `local.<NAME>`
+        Child Module Outputs:   `module.<NAME>`
+        Data Sources:           `data.<DATA_TYPE>.<NAME>`
+        ```
 
-- Filesystems and workspace info can also be accessed:
+-   Filesystems and workspace info can also be accessed:
 
-  ```text
-  path.module         - path of the module where the expression is placed
-  path.root           - path of the root module of the configuration
-  path.cwd            - path of the current working directory
-  terraform.workspace - name of the currently selected workspace
-  ```
+    ```text
+    path.module         - path of the module where the expression is placed
+    path.root           - path of the root module of the configuration
+    path.cwd            - path of the current working directory
+    terraform.workspace - name of the currently selected workspace
+    ```
 
-- Block-local values (within block bodies)
+-   Block-local values (within block bodies)
 
-  ```text
-  count.index             - when you use the count meta argument
-  each.key / each.value   - when you use the _each meta argument
-  self.<attribute>        - self-reference information within the block
-  ```
+    ```text
+    count.index             - when you use the count meta argument
+    each.key / each.value   - when you use the _each meta argument
+    self.<attribute>        - self-reference information within the block
+    ```
 
-- Resource Meta Arguments (change behaviour of resources)
-- ```text
-  depends_on            - for specifying explicit dependencies
-  count                 - for creating multiple resource instances according to a count
-  for_each              - for creating multiple instance according to a map, or set of strings
-  provider              - for selecting a non-default provider configuration
-  lifecycle             - for lifecycle customizations
-  provision, connection - for taking extra action after resource creation
-  ```
+-   Resource Meta Arguments (change behaviour of resources)
+-   ```text
+    depends_on            - for specifying explicit dependencies
+    count                 - for creating multiple resource instances according to a count
+    for_each              - for creating multiple instance according to a map, or set of strings
+    provider              - for selecting a non-default provider configuration
+    lifecycle             - for lifecycle customizations
+    provision, connection - for taking extra action after resource creation
+    ```

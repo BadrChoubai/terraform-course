@@ -28,10 +28,10 @@ keyword versions.
 
 Complex types are broken up into two categories:
 
-- Collection Types
-  - `list`, `map`, and `set`
-- Structural Types
-  - `tuple` and `object`
+-   Collection Types
+    -   `list`, `map`, and `set`
+-   Structural Types
+    -   `tuple` and `object`
 
 ### Collection Types
 

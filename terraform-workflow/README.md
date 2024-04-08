@@ -84,29 +84,29 @@ to create resources, which consists of:
 
 There are two types of plans which Terraform will work with:
 
-- Speculative Plan
-  - Created with `terraform apply`
-  - Terraform outputs the description of the plan without any intention of
-    running it
-- Saved Plan
-  - Create with `terraform apply -out=FILE`
-  - This will generate a plan file which can then be passed to `terraform apply [FILE]`.
-    When using a saved plan, it will not prompt you to confirm and will act like auto-approve
+-   Speculative Plan
+    -   Created with `terraform apply`
+    -   Terraform outputs the description of the plan without any intention of
+        running it
+-   Saved Plan
+    -   Create with `terraform apply -out=FILE`
+    -   This will generate a plan file which can then be passed to `terraform apply [FILE]`.
+        When using a saved plan, it will not prompt you to confirm and will act like auto-approve
 
 ## Terraform Apply `terraform apply`
 
 Running `terraform apply` is done to execution the actions proposed in an Execution Plan and, ter
 it runs in two modes.
 
-- Automatic Plan Mode
-  - Run `terraform apply`
-  - Executes plan, validate, and the apply
-  - Requires users to manually approve the plan by writing "yes", unless `-auto-approve`
-    flag is passed
-- Saved Plan Mode
-  - Running `terraform apply FILE`
-  - Performs exactly the steps specified by the plan file and does not prompt
-    for approval. If you'd like to preview changes you can run `terraform show`
+-   Automatic Plan Mode
+    -   Run `terraform apply`
+    -   Executes plan, validate, and the apply
+    -   Requires users to manually approve the plan by writing "yes", unless `-auto-approve`
+        flag is passed
+-   Saved Plan Mode
+    -   Running `terraform apply FILE`
+    -   Performs exactly the steps specified by the plan file and does not prompt
+        for approval. If you'd like to preview changes you can run `terraform show`
 
 ### Commands
 

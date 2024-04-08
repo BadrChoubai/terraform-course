@@ -44,15 +44,15 @@ Global options (use these before the subcommand, if any):
 Terraform uses Change Automation in the form of Execution Plans and Resources Graphs
 to apply and review complex ChangeSets
 
-- What is Change Management?
+-   What is Change Management?
 
-  - A standard approach to apply change and resolve conflicts brough about by change
-  - In the context of Infrastructure as Code, change management is the procedure that
-    will be followed when resources are modified and applied by configuration script
+    -   A standard approach to apply change and resolve conflicts brough about by change
+    -   In the context of Infrastructure as Code, change management is the procedure that
+        will be followed when resources are modified and applied by configuration script
 
-- What is Change Automation?
-  - A way of _automatically_ creating a consistent, systematic, and predictable
-    way of managing change requests via organizational controls and policies
+-   What is Change Automation?
+    -   A way of _automatically_ creating a consistent, systematic, and predictable
+        way of managing change requests via organizational controls and policies
 
 ### Execution Plans
 

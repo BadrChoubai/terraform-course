@@ -14,10 +14,10 @@ is created as `terraform.tfstate.backup`.
 
 ## Terraform State Commands
 
-- `terraform state mv`
-  - Rename existing resources: `... mv packet_device.worker packet_device.helper`
-  - Move a resource into a module: `... mv package_device.worker module.workers.packet_device.worker`
-  - Move a module into a module: `... mv module.app module.parent.module.app
+-   `terraform state mv`
+    -   Rename existing resources: `... mv packet_device.worker packet_device.helper`
+    -   Move a resource into a module: `... mv package_device.worker module.workers.packet_device.worker`
+    -   Move a module into a module: `... mv module.app module.parent.module.app
 
 ### Commands
 
